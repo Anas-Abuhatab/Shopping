@@ -37,6 +37,9 @@ function handleSubmit( event ) {
   CartItem.Product = event.target.items.value ;
   CartItem.quantity = event.target.quantity.value;
 
+
+
+
   // Do all the things ...
   addSelectedItemToCart();
   cart.saveToLocalStorage();
@@ -45,7 +48,8 @@ function handleSubmit( event ) {
   
   catalogForm.reset() ;
   counter++ ;
-  // console.log(event) ;
+  console.log(event) ;
+
 
 }
 
@@ -55,6 +59,8 @@ function addSelectedItemToCart() {
   // TODO: get the quantity
   // TODO: using those, add one item to the Cart
 }
+
+
 
 
 
